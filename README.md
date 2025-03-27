@@ -1,7 +1,9 @@
 📢 IPO (Halka Arz) Notification Bot
+
 This project scrapes upcoming IPO data from halkarz.com using BeautifulSoup and sends notifications to users via a Discord bot.
 
 🛠 Project Structure
+
 The project consists of three Python scripts:
 
 1️⃣ Scraper → Fetches the latest IPO data from the website.
