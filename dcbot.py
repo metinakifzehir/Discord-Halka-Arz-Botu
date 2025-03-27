@@ -1,9 +1,8 @@
 import nextcord
 from nextcord.ext import commands
 
-BOT_TOKEN = "MTE4MjY5OTkzNjEwNjY3NjI0NA.G-_fRQ.aPitLhQHoDpTJaoseAcAnERrpy617-mQhoEO1U"
-CHANNEL_ID = 1182820757584232499
-#CHANNEL_ID = 792402432293601291
+BOT_TOKEN = "bot_token"
+CHANNEL_ID = "channel_id"
 
 intents = nextcord.Intents.all()
 intents.members = True
@@ -28,19 +27,5 @@ async def on_ready():
         channel = bot.get_channel(CHANNEL_ID)
         await channel.send(retStr)
     await bot.close()
-
-"""
-@tasks.loop(hours=24)  # 24 saate bir çalışacak
-async def send_daily_message():
-    now = datetime.now()
-    if now.hour == 20 and now.minute == 0:
-        channel_id = 792402432293601291  # Kanal ID'sini buraya ekleyin
-        channel = bot.get_channel(channel_id)
-
-        if channel:
-            await channel.send("Her gün saat 20:00'de gönderilen mesaj!")
-        else:
-            print(f"Belirtilen kanal ID'si geçersiz: {channel_id}")
-"""
 
 bot.run(BOT_TOKEN)
