@@ -18,6 +18,10 @@ The project consists of three Python scripts:
     
 - Discord.py (for bot integration)
 
-📥 Usage
+📥 Executing
 
-halkarz.cmd file executes the Python scripts sequentially.
+halkarz.cmd file executes the Python scripts sequentially. Every time this file is run, the bot starts automatically without requiring any additional action.
+
+📸 Example Output
+
+![Screenshot_1](https://github.com/user-attachments/assets/c68df15b-cf71-4030-9647-68670a694200)
